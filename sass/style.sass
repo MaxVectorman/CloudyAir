@@ -1,0 +1,331 @@
+@import mixins
+@import media
+@import sprites
+@import normalize
+
+$font-family: Montserrat
+
+body
+	background-color: #f0f2f7
+
+.header
+	&-top
+		height: 52px
+		background-color: #28292e
+		
+	&-middle
+		height: 80px
+		background-color: #fff
+		border-bottom: 1px solid #e3e8f0
+
+	&-bottom
+		height: 65px
+		background-color: #fff
+		box-shadow: 0 2px 20px #ddd
+		
+	&-item
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+
+.top
+	&-menu
+		display: flex
+		list-style: none
+		padding-top: 18px
+		&__link
+			color: #fff
+			font-family: $font-family
+			font-weight: 500
+			margin-right: 20px
+			&:hover
+				color: #53c6ec
+
+	&-location
+		display: flex
+		list-style: none
+		padding-top: 18px
+		&__link
+			color: #fff
+			font-family: $font-family
+			font-weight: 500
+			margin-right: 20px
+			&:hover
+				color: #53c6ec
+			&--r
+				color: #fff
+				font-family: $font-family
+				font-weight: 500
+				margin-right: 0
+				&:hover
+					color: #53c6ec
+
+.top-location [class*="icon"]
+	font-size: 15px
+	color: #fff
+	margin-right: 1px
+
+.middle
+	&-item
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		padding-top: 20px
+		&__count
+			display: inline-block
+			vertical-align: center
+			text-align: center
+			min-width: 24px
+			height: 24px
+			color: #343e5c
+			font-size: 11px
+			font-family: $font-family
+			line-height: 15px
+			padding: 4px 10px
+			margin-left: 5px
+			background-color: #e3e8f0
+			border-radius: 50%
+	&-phone
+		color: #000
+		font-family: $font-family
+		font-size: 20px
+		font-weight: 500
+		text-transform: uppercase
+		&:hover
+			color: #753aff
+			text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+	&-sales
+		display: flex
+	&-search
+		position: relative
+		&__input
+			width: 400px
+			border: 2px solid #e3e8f0
+			border-radius: 18px
+			padding: 5px
+			padding-left: 40px
+			color: #a1a8bd
+			font-size: 14px
+			font-weight: 400
+			line-height: 24px
+			+placeholder
+				font-family: $font-family
+				color: #868686
+			&:focus
+				border: 2px solid #53c6ec
+		&__button
+			position: absolute
+			top: 8px
+			left: 5px
+			font-family: 'icomoon' !important
+			background-color: transparent
+			border: none
+			font-size: 20px
+			&:hover
+				color: #53c6ec
+			&:active
+				color: #753aff
+				font-size: 21px
+	&-item
+		display: flex
+		&__link
+			margin-right: 20px
+			color: #343e5c
+			font-family: $font-family
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+			&:hover	
+				color: #753aff
+				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+			&--r
+				color: #343e5c
+				font-family: $font-family
+				font-size: 11px
+				font-weight: 400
+				text-transform: uppercase
+				&:hover
+					color: #753aff
+					text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)	
+		
+.middle-item [class*="icon"]
+	font-size: 15px
+	margin-right: 5px
+
+.icon-phone
+	padding: 5px
+	color: #753aff
+	background-color: #53c6ec
+	font-size: 20px !important
+	border: 1px solid #753aff
+	border-radius: 50%
+	margin-right: 5px
+
+.bottom
+	&-menu
+		padding-top: 25px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&__item
+			list-style: none
+		&__link
+			color: #343e5c
+			font-family: $font-family
+			font-size: 15px
+			font-weight: 500
+			&:hover
+				color: #753aff
+				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+
+.content
+
+.title
+	color: #343e5c
+	font-family: $font-family
+	font-size: 20px
+	font-weight: 700
+	line-height: 20px
+	margin-bottom: 30px
+
+.breadcrumbs
+	display: flex
+	padding: 30px 0
+	color: #b8bfd3
+	font-family: $font-family
+	font-size: 13px
+	font-weight: 400
+
+.service
+	margin-bottom: 80px
+	&-row
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		display: block
+		width: 270px
+		height: 420px
+		background-color: #fff
+		margin-bottom: 35px
+		border-radius: 5px
+		&__title
+			width: 160px
+			text-align: center
+			color: #1c1e23
+			font-family: $font-family
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			margin: 18px auto
+		&__order
+			display: block
+			width: 165px
+			color: #fff
+			text-align: center
+			font-family: $font-family
+			font-size: 13px
+			font-weight: 500
+			text-transform: uppercase
+			background-color: #753aff
+			border: 1px solid #753aff
+			border-radius: 16px
+			padding: 8px 0
+			margin: 5px auto
+			&:hover
+				color: #fff
+				background-color: #53c6ec
+				border: 1px solid #753aff
+				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+
+		&__more
+			display: block
+			width: 165px
+			color: #753aff
+			text-align: center
+			font-family: $font-family
+			font-size: 13px
+			font-weight: 500
+			text-transform: uppercase
+			border: 1px solid #753aff
+			border-radius: 16px
+			padding: 8px 0
+			margin: 5px auto
+			&:hover
+				color: #fff
+				background-color: #53c6ec
+				border: 1px solid #753aff
+				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+
+.huevina
+	display: block
+	height: 316px
+	background-color: white
+
+.footer
+	height: 300px
+	background-color: #28292e
+	&-item
+		&__row
+			width: 1400px
+			height: 150px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-direction: wrap
+			border-bottom: 1px solid #444
+	&-menu
+		list-style: none
+		display: flex
+		&__item
+		&__link
+			color: #fff
+			font-family: $font-family
+			font-size: 12px
+			font-weight: 500
+			margin: 0 20px
+			text-transform: uppercase
+			&:hover
+				color: #53c6ec
+	&-contact
+		width: 180px
+		text-align: end
+		&__phone
+			color: #fff
+			font-family: $font-family
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			&:hover
+				color: #53c6ec
+		&__mail
+			color: #fff
+			font-family: $font-family
+			font-size: 14px
+			font-weight: 400
+			line-height: 18px
+			&:hover
+				color: #53c6ec
+
+.simple-text
+	width: 511px
+	height: 37px
+	color: #555
+	font-family: CrimsonText
+	font-size: 14px
+	font-style: italic
+	line-height: 22px
+.privacy
+	display: flex
+	&-item
+		color: #555
+		font-family: $font-family
+		font-size: 11px
+		font-weight: 400
+		margin-left: 20px
+		text-transform: uppercase
+
+			
+

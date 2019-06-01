@@ -1,0 +1,432 @@
+/*   Author:  Pit Orel
+ *   Website: https://vk.com/html_css_verstka_saitov
+ *   Github:  https://github.com/pit6262
+ *   Skype:   hostings1
+ *
+ */
+/* NORMALIZE */
+/* ================================================ */
+html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Tahoma, sans-serif;
+  line-height: 1;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-width: 0px;
+  padding: 0px;
+  margin: 0px; }
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none; }
+
+input, textarea {
+  color: #333;
+  outline: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none; }
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+::-ms-clear {
+  width: 0;
+  height: 0; }
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none; }
+
+td, form {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  color: #000100;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.clearfix:after, .wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+body {
+  background-color: #f0f2f7; }
+
+.header-top {
+  height: 52px;
+  background-color: #28292e; }
+.header-middle {
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e8f0; }
+.header-bottom {
+  height: 65px;
+  background-color: #fff;
+  box-shadow: 0 2px 20px #ddd; }
+.header-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.top-menu {
+  display: flex;
+  list-style: none;
+  padding-top: 18px; }
+  .top-menu__link {
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-right: 20px; }
+    .top-menu__link:hover {
+      color: #53c6ec; }
+.top-location {
+  display: flex;
+  list-style: none;
+  padding-top: 18px; }
+  .top-location__link {
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-right: 20px; }
+    .top-location__link:hover {
+      color: #53c6ec; }
+    .top-location__link--r {
+      color: #fff;
+      font-family: Montserrat;
+      font-weight: 500;
+      margin-right: 0; }
+      .top-location__link--r:hover {
+        color: #53c6ec; }
+
+.top-location [class*="icon"] {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 1px; }
+
+.middle-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px; }
+  .middle-item__count {
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+    min-width: 24px;
+    height: 24px;
+    color: #343e5c;
+    font-size: 11px;
+    font-family: Montserrat;
+    line-height: 15px;
+    padding: 4px 10px;
+    margin-left: 5px;
+    background-color: #e3e8f0;
+    border-radius: 50%; }
+.middle-phone {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .middle-phone:hover {
+    color: #753aff;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+.middle-sales {
+  display: flex; }
+.middle-search {
+  position: relative; }
+  .middle-search__input {
+    width: 400px;
+    border: 2px solid #e3e8f0;
+    border-radius: 18px;
+    padding: 5px;
+    padding-left: 40px;
+    color: #a1a8bd;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; }
+    .middle-search__input:-ms-input-placeholder {
+      font-family: Montserrat;
+      color: #868686; }
+    .middle-search__input:-moz-placeholder {
+      font-family: Montserrat;
+      color: #868686; }
+    .middle-search__input::-moz-placeholder {
+      font-family: Montserrat;
+      color: #868686; }
+    .middle-search__input::-webkit-input-placeholder {
+      font-family: Montserrat;
+      color: #868686; }
+    .middle-search__input::placeholder {
+      font-family: Montserrat;
+      color: #868686; }
+    .middle-search__input:focus {
+      border: 2px solid #53c6ec; }
+  .middle-search__button {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    font-family: "icomoon" !important;
+    background-color: transparent;
+    border: none;
+    font-size: 20px; }
+    .middle-search__button:hover {
+      color: #53c6ec; }
+    .middle-search__button:active {
+      color: #753aff;
+      font-size: 21px; }
+.middle-item {
+  display: flex; }
+  .middle-item__link {
+    margin-right: 20px;
+    color: #343e5c;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .middle-item__link:hover {
+      color: #753aff;
+      text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+    .middle-item__link--r {
+      color: #343e5c;
+      font-family: Montserrat;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase; }
+      .middle-item__link--r:hover {
+        color: #753aff;
+        text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+
+.middle-item [class*="icon"] {
+  font-size: 15px;
+  margin-right: 5px; }
+
+.icon-phone {
+  padding: 5px;
+  color: #753aff;
+  background-color: #53c6ec;
+  font-size: 20px !important;
+  border: 1px solid #753aff;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+.bottom-menu {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .bottom-menu__item {
+    list-style: none; }
+  .bottom-menu__link {
+    color: #343e5c;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500; }
+    .bottom-menu__link:hover {
+      color: #753aff;
+      text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+
+.title {
+  color: #343e5c;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 30px; }
+
+.breadcrumbs {
+  display: flex;
+  padding: 30px 0;
+  color: #b8bfd3;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400; }
+
+.service {
+  margin-bottom: 80px; }
+  .service-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .service-item {
+    display: block;
+    width: 270px;
+    height: 420px;
+    background-color: #fff;
+    margin-bottom: 35px;
+    border-radius: 5px; }
+    .service-item__title {
+      width: 160px;
+      text-align: center;
+      color: #1c1e23;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 18px auto; }
+    .service-item__order {
+      display: block;
+      width: 165px;
+      color: #fff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      background-color: #753aff;
+      border: 1px solid #753aff;
+      border-radius: 16px;
+      padding: 8px 0;
+      margin: 5px auto; }
+      .service-item__order:hover {
+        color: #fff;
+        background-color: #53c6ec;
+        border: 1px solid #753aff;
+        text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+    .service-item__more {
+      display: block;
+      width: 165px;
+      color: #753aff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: 1px solid #753aff;
+      border-radius: 16px;
+      padding: 8px 0;
+      margin: 5px auto; }
+      .service-item__more:hover {
+        color: #fff;
+        background-color: #53c6ec;
+        border: 1px solid #753aff;
+        text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+
+.huevina {
+  display: block;
+  height: 316px;
+  background-color: white; }
+
+.footer {
+  height: 300px;
+  background-color: #28292e; }
+  .footer-item__row {
+    width: 1400px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: wrap;
+    border-bottom: 1px solid #444; }
+  .footer-menu {
+    list-style: none;
+    display: flex; }
+    .footer-menu__link {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0 20px;
+      text-transform: uppercase; }
+      .footer-menu__link:hover {
+        color: #53c6ec; }
+  .footer-contact {
+    width: 180px;
+    text-align: end; }
+    .footer-contact__phone {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px; }
+      .footer-contact__phone:hover {
+        color: #53c6ec; }
+    .footer-contact__mail {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px; }
+      .footer-contact__mail:hover {
+        color: #53c6ec; }
+
+.simple-text {
+  width: 511px;
+  height: 37px;
+  color: #555;
+  font-family: CrimsonText;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 22px; }
+
+.privacy {
+  display: flex; }
+  .privacy-item {
+    color: #555;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 20px;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */
