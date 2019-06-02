@@ -371,7 +371,6 @@ body {
   height: 300px;
   background-color: #28292e; }
   .footer-item__row {
-    width: 1400px;
     height: 150px;
     display: flex;
     align-items: center;
