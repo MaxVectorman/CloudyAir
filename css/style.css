@@ -298,8 +298,8 @@ body {
     display: flex;
     align-items: center; }
   .main-menu__link {
-    align-items: center;
-    line-height: 16px;
+    text-align: center;
+    line-height: 10px;
     color: #343e5c;
     font-family: Montserrat;
     font-size: 15px;
