@@ -193,6 +193,9 @@ body
 		height: 65px
 		display: flex
 		align-items: center
+		&:hover .main-menu__link
+			color: #53c6ec
+			text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
 	&__link
 		text-align: center
 		line-height: 10px
@@ -201,13 +204,11 @@ body
 		font-size: 15px
 		font-weight: 500
 		display: block
-		&:hover
-			color: #53c6ec
-			text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+		
 
 .dropdown:hover .dropdown-content
 	opacity: 1
-	left: -30px
+	left: -40px
 	visibility: visible
 
 .dropdown
@@ -223,7 +224,6 @@ body
 		left: -10000px
 		visibility: hidden
 		opacity: 0
-		text-transform: uppercase
 		transition: opacity 0.3s, margin-top 0.4s
 	&-menu
 		list-style: none
@@ -243,8 +243,9 @@ body
 .dropdown-menu__item:hover .dropdown-menu__link
 	color: #fff
 
-/* ======================================== */
+/*==================HEADER======================*/
 
+/*==================CONTENT=====================*/
 .content
 
 .title
@@ -262,6 +263,9 @@ body
 	font-family: $font-family
 	font-size: 13px
 	font-weight: 400
+
+
+/*____________________Service____________________*/
 
 .service
 	margin-bottom: 80px
@@ -325,9 +329,80 @@ body
 				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
 
 .huevina
+	content: ''
 	display: block
 	height: 316px
 	background-color: white
+
+/*____________________Service____________________*/
+/*____________________Stock______________________*/
+
+.stock
+	&-row
+		display: flex
+		justify-content: space-between
+		height: 300px
+		padding-bottom: 50px
+	&-item
+		width: 580px
+		height: 200px
+		background-color: #dae1eb
+		margin-bottom: 15px
+		position: relative
+	&-title
+		color: #343e5c
+		font-family: Montserrat
+		font-size: 18px
+		font-weight: 500
+		top: 220px
+		position: absolute
+		&:hover
+			color: #753aff
+			text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+
+
+/*==================CONTENT======================*/
+
+/*==================CONTENT_SLIDER===============*/
+
+.fs-slide
+	&__title
+		color: #fff
+		font-family: Montserrat
+		font-size: 42px
+		font-weight: 700
+		width: 320px
+		margin: 100px 65px 15px
+	&__text
+		width: 500px
+		color: #fff
+		font-family: Arial
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		margin: 10px 65px 45px
+	&__link
+		color: #753aff
+		font-family: Montserrat
+		font-size: 12px
+		font-weight: 500
+		text-decoration: none
+		text-transform: uppercase
+		padding: 10px 30px
+		background-color: #fff
+		border: 1px solid #fff
+		border-radius: 21px
+		box-shadow: -0.7px -20px 40px rgba(0, 0, 0, 0.2)
+		margin: 65px
+		&:hover
+			color: #fff
+			background-color: #753aff
+			border: 1px solid #fff
+
+/*==================CONTENT_SLIDER===============*/
+
+/*==================FOOTER=======================*/
+
 
 .footer
 	height: 300px
