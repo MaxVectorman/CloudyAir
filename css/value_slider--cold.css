@@ -1,0 +1,169 @@
+
+.masonry--cold {
+	width: 230px; 
+	margin: 0 auto;
+}
+
+.range-label--cold {
+	color: #a1a8bd;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.range-span--cold {
+	font-size: 13px;
+    color: #ddd;
+    margin-left: 5px;
+}
+
+.masonry--cold input {
+	width: 75px;
+	height: 30px;
+	color: #343e5c;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 500;
+	padding: 15px;
+    margin-bottom: 27px;
+	background-color: #f0f2f7;
+    border: 1px solid #e3e8f0;
+	border-radius: 18px;
+
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+
+
+/* Ширина, высота и позиционирование для ползунков
+----------------------------------*/
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 21px;
+	height: 21px;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+    cursor:pointer;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+/* Высота горизонтальной полоски
+----------------------------------*/
+.ui-slider-horizontal {height: 2px;}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.6em;
+	margin-left: -.6em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.ui-slider-horizontal .ui-slider-range {top: 0;height: 100%;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max {right: 0;}
+
+/* Ширина вертикальной полоски
+----------------------------------*/
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.5em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {left: 0;width: 100%;}
+.ui-slider-vertical .ui-slider-range-min {bottom: 0;}
+.ui-slider-vertical .ui-slider-range-max {top: 0;}
+
+/* Указание шрифта и размера текста
+----------------------------------*/
+.ui-widget {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+
+/* Стилизация полоски
+----------------------------------*/
+.ui-widget-content {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background: #ddd;
+	color: #222222;
+	
+	-webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+    	 -o-border-radius: 4px;
+			border-radius: 4px;
+    
+}
+.ui-widget-content a {color: #222222;}
+
+/* Стилизация промижудка между ползунками
+----------------------------------*/
+.ui-widget-header {
+	background: #51c8ec;
+	color: #222222;
+	font-weight: bold;
+}
+.ui-widget-header a {color: #222222;}
+
+/* Стилизация ползунков 
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	font-weight: normal;
+	background: #51c8ec; /* Old browsers */
+	outline: none;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #555555;
+	text-decoration: none;
+}
+
+/* Стилизация ползунка при наведении и фокусе
+----------------------------------*/
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	background-color: #51c8ec;
+	font-weight: normal;
+}

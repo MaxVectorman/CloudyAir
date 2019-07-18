@@ -16,6 +16,12 @@ $('#container ul').removeClass('grid').addClass('list');
 */
 
 
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 8
+});
+
 
 
 }); //Конец ready

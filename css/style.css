@@ -19,7 +19,7 @@ article, aside, details, main, figcaption, figure, footer, header, hgroup, menu,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: Montserrat;
   line-height: 1;
   background-color: #ffffff;
   height: 100%;
@@ -144,7 +144,6 @@ body {
   padding-top: 18px; }
   .top-menu__link {
     color: #fff;
-    font-family: Montserrat;
     font-weight: 500;
     margin-right: 20px; }
     .top-menu__link:hover {
@@ -157,14 +156,12 @@ body {
   padding-top: 18px; }
   .top-location__link {
     color: #fff;
-    font-family: Montserrat;
     font-weight: 500;
     margin-right: 20px; }
     .top-location__link:hover {
       color: #53c6ec; }
     .top-location__link--r {
       color: #fff;
-      font-family: Montserrat;
       font-weight: 500;
       margin-right: 0; }
       .top-location__link--r:hover {
@@ -198,7 +195,6 @@ body {
     height: 24px;
     color: #343e5c;
     font-size: 11px;
-    font-family: Montserrat;
     line-height: 15px;
     padding: 4px 10px;
     margin-left: 5px;
@@ -206,7 +202,6 @@ body {
     border-radius: 50%; }
 .middle-phone {
   color: #000;
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase; }
@@ -230,16 +225,12 @@ body {
     font-weight: 400;
     line-height: 24px; }
     .middle-search__input:-ms-input-placeholder {
-      font-family: Montserrat;
       color: #868686; }
     .middle-search__input::-webkit-input-placeholder {
-      font-family: Montserrat;
       color: #868686; }
     .middle-search__input::-ms-input-placeholder {
-      font-family: Montserrat;
       color: #868686; }
     .middle-search__input::placeholder {
-      font-family: Montserrat;
       color: #868686; }
     .middle-search__input:focus {
       border: 2px solid #53c6ec; }
@@ -263,7 +254,6 @@ body {
   .middle-item__link {
     margin-right: 20px;
     color: #343e5c;
-    font-family: Montserrat;
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase; }
@@ -272,7 +262,6 @@ body {
       text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
     .middle-item__link--r {
       color: #343e5c;
-      font-family: Montserrat;
       font-size: 11px;
       font-weight: 400;
       text-transform: uppercase; }
@@ -308,7 +297,6 @@ body {
     list-style: none; }
   .bottom-menu__link {
     color: #343e5c;
-    font-family: Montserrat;
     font-size: 15px;
     font-weight: 500; }
     .bottom-menu__link:hover {
@@ -343,7 +331,6 @@ body {
     text-align: center;
     line-height: 10px;
     color: #343e5c;
-    font-family: Montserrat;
     font-size: 15px;
     font-weight: 500;
     display: block; }
@@ -357,31 +344,44 @@ body {
   position: relative; }
   .dropdown-content {
     position: absolute;
-    background-color: #fff;
+    background-color: #f0f2f7;
     font-size: 15px;
-    font-family: Montserrat;
     font-weight: 500;
     top: 100%;
     z-index: 99;
     left: -10000px;
     visibility: hidden;
     opacity: 0;
+    border-radius: 0px 0px 10px 10px;
     -webkit-transition: opacity 0.3s, margin-top 0.4s;
     transition: opacity 0.3s, margin-top 0.4s; }
   .dropdown-menu {
     list-style: none;
-    width: 196px; }
+    width: 196px;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4); }
     .dropdown-menu__item {
-      padding: 20px 40px; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 61px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .dropdown-menu__item:hover {
         background-color: #53c6ec; }
     .dropdown-menu__link {
-      font-size: 12px;
-      line-height: 16px;
-      color: #aaa; }
+      width: 130px;
+      color: #343e5c;
+      font-size: 15px;
+      font-weight: 500; }
 
 .dropdown-menu__item:last-child {
-  margin-bottom: 0; }
+  border-radius: 0px 0px 10px 10px; }
 
 .dropdown-menu__item:hover .dropdown-menu__link {
   color: #fff; }
@@ -390,7 +390,6 @@ body {
 /*==================CONTENT===================== */
 .title {
   color: #343e5c;
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
@@ -402,11 +401,154 @@ body {
   display: flex;
   padding: 30px 0;
   color: #b8bfd3;
-  font-family: Montserrat;
   font-size: 13px;
   font-weight: 400; }
 
-/*____________________Service____________________ */
+/*_______________Catalog_______________ */
+.catalog-menu {
+  height: 56px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 45px 0 25px; }
+.catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.catalog-sidebar {
+  width: 275px;
+  height: 1320px;
+  border-radius: 5px;
+  background-color: #fff; }
+.catalog-products {
+  width: 890px; }
+  .catalog-products__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px; }
+    .catalog-products__row:last-child {
+      margin: 0; }
+
+.product {
+  width: 275px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative; }
+  .product-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 210px; }
+  .product-title {
+    width: 220px;
+    color: #1c1e23;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto; }
+  .product-item {
+    display: block;
+    width: 220px;
+    height: 70px; }
+    .product-item__favorites {
+      color: #e3e8f0;
+      font-size: 25px;
+      position: absolute;
+      left: 25px;
+      top: 25px; }
+      .product-item__favorites:focus {
+        color: #ffcc30; }
+    .product-item__price {
+      color: #753aff;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 10px 0;
+      position: absolute;
+      left: 25px;
+      bottom: 60px; }
+    .product-item__button {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      background-color: #753aff;
+      padding: 11px 24px;
+      border: 1px solid #753aff;
+      border-radius: 20px;
+      position: absolute;
+      right: 25px;
+      bottom: 60px; }
+      .product-item__button:hover {
+        color: #fff;
+        background-color: #53c6ec;
+        border: 1px solid #753aff;
+        text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7); }
+    .product-item__instal {
+      width: 80px;
+      color: #b8bfd3;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      position: absolute;
+      left: 25px;
+      bottom: 15px; }
+    .product-item__compare {
+      color: #753aff;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      position: absolute;
+      right: 35px;
+      bottom: 15px; }
+
+.paginator {
+  height: 90px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 50px 0; }
+
+/*___________Catalog/Watched___________ */
+.watched {
+  height: 480px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 60px; }
+  .watched-title {
+    height: 56px;
+    border: #343e5c;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    border-bottom: 2px solid #f0f2f7;
+    text-transform: uppercase; }
+
+.product-watched {
+  width: 300px;
+  height: 430px;
+  background-color: none;
+  border-radius: 5px;
+  position: relative;
+  outline: 1px solid #f0f2f7; }
+
+/*___________Watched/Service___________ */
 .service {
   margin-bottom: 80px; }
   .service-row {
@@ -429,7 +571,6 @@ body {
       width: 160px;
       text-align: center;
       color: #1c1e23;
-      font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
       line-height: 20px;
@@ -439,7 +580,6 @@ body {
       width: 165px;
       color: #fff;
       text-align: center;
-      font-family: Montserrat;
       font-size: 13px;
       font-weight: 500;
       text-transform: uppercase;
@@ -458,7 +598,6 @@ body {
       width: 165px;
       color: #753aff;
       text-align: center;
-      font-family: Montserrat;
       font-size: 13px;
       font-weight: 500;
       text-transform: uppercase;
@@ -478,8 +617,7 @@ body {
   height: 316px;
   background-color: white; }
 
-/*____________________Service____________________ */
-/*____________________Stock______________________ */
+/*_______________Service/stock_______________ */
 .stock-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,7 +635,6 @@ body {
   position: relative; }
 .stock-title {
   color: #343e5c;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
   top: 220px;
@@ -510,7 +647,6 @@ body {
 /*==================CONTENT_SLIDER=============== */
 .fs-slide__title {
   color: #fff;
-  font-family: Montserrat;
   font-size: 42px;
   font-weight: 700;
   width: 320px;
@@ -525,7 +661,6 @@ body {
   margin: 10px 65px 45px; }
 .fs-slide__link {
   color: #753aff;
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
@@ -541,6 +676,10 @@ body {
     color: #fff;
     background-color: #753aff;
     border: 1px solid #fff; }
+
+.slick-slide {
+  max-width: 300px;
+  height: 430px; }
 
 /*==================CONTENT_SLIDER=============== */
 /*==================FOOTER======================= */
@@ -570,7 +709,6 @@ body {
     display: flex; }
     .footer-menu__link {
       color: #fff;
-      font-family: Montserrat;
       font-size: 12px;
       font-weight: 500;
       margin: 0 20px;
@@ -582,7 +720,6 @@ body {
     text-align: end; }
     .footer-contact__phone {
       color: #fff;
-      font-family: Montserrat;
       font-size: 14px;
       font-weight: 400;
       line-height: 18px; }
@@ -590,7 +727,6 @@ body {
         color: #53c6ec; }
     .footer-contact__mail {
       color: #fff;
-      font-family: Montserrat;
       font-size: 14px;
       font-weight: 400;
       line-height: 18px; }
@@ -612,7 +748,6 @@ body {
   display: flex; }
   .privacy-item {
     color: #555;
-    font-family: Montserrat;
     font-size: 11px;
     font-weight: 400;
     margin-left: 20px;

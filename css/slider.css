@@ -1,25 +1,25 @@
 /********** SLIDER **********/
-.slider {
+.slider__header {
     height: 500px;
     background-color: #51c8ec;}
 
-.slide-viewer {
+.slide-viewer__header {
     position: relative; /* needed for IE7 */
     overflow: hidden;
     height: 430px;}
 
-.slide-group {
+.slide-group__header {
     width: 100%;
     height: 100%;
     position: relative;}
 
-.slide {
+.slide__header {
     width: 100%;
     height: 100%;
     display: none;
     position: absolute;}
 
-.slide:first-child {
+.slide__header:first-child {
     display: block;}
 
 
@@ -27,7 +27,7 @@
 .slide-buttons {
   text-align: center;}
 
-.slide-btn {
+.slide-btn__header {
   display: inline-block;
   border: 1px solid #000;
   border-radius: 50%;
@@ -36,6 +36,6 @@
   padding: 4px;
   line-height: 0.5em;}
 
-.slide-btn.active, .slide-btn:hover {
+.slide-btn__header.active, .slide-btn__header:hover {
   background: #000;
   cursor: pointer;}

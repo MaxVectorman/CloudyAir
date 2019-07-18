@@ -36,8 +36,7 @@ body
 		list-style: none
 		padding-top: 18px
 		&__link
-			color: #fff
-			font-family: $font-family
+			color: #fff			
 			font-weight: 500
 			margin-right: 20px
 			&:hover
@@ -48,15 +47,13 @@ body
 		list-style: none
 		padding-top: 18px
 		&__link
-			color: #fff
-			font-family: $font-family
+			color: #fff			
 			font-weight: 500
 			margin-right: 20px
 			&:hover
 				color: #53c6ec
 			&--r
-				color: #fff
-				font-family: $font-family
+				color: #fff				
 				font-weight: 500
 				margin-right: 0
 				&:hover
@@ -81,16 +78,14 @@ body
 			min-width: 24px
 			height: 24px
 			color: #343e5c
-			font-size: 11px
-			font-family: $font-family
+			font-size: 11px			
 			line-height: 15px
 			padding: 4px 10px
 			margin-left: 5px
 			background-color: #e3e8f0
 			border-radius: 50%
 	&-phone
-		color: #000
-		font-family: $font-family
+		color: #000		
 		font-size: 20px
 		font-weight: 500
 		text-transform: uppercase
@@ -111,8 +106,7 @@ body
 			font-size: 14px
 			font-weight: 400
 			line-height: 24px
-			+placeholder
-				font-family: $font-family
+			+placeholder				
 				color: #868686
 			&:focus
 				border: 2px solid #53c6ec
@@ -133,8 +127,7 @@ body
 		display: flex
 		&__link
 			margin-right: 20px
-			color: #343e5c
-			font-family: $font-family
+			color: #343e5c			
 			font-size: 11px
 			font-weight: 400
 			text-transform: uppercase
@@ -142,8 +135,7 @@ body
 				color: #753aff
 				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
 			&--r
-				color: #343e5c
-				font-family: $font-family
+				color: #343e5c				
 				font-size: 11px
 				font-weight: 400
 				text-transform: uppercase
@@ -173,8 +165,7 @@ body
 		&__item
 			list-style: none
 		&__link
-			color: #343e5c
-			font-family: $font-family
+			color: #343e5c			
 			font-size: 15px
 			font-weight: 500
 			&:hover
@@ -199,8 +190,7 @@ body
 	&__link
 		text-align: center
 		line-height: 10px
-		color: #343e5c
-		font-family: $font-family
+		color: #343e5c		
 		font-size: 15px
 		font-weight: 500
 		display: block
@@ -215,30 +205,36 @@ body
 	position: relative
 	&-content
 		position: absolute
-		background-color: #fff
+		background-color: #f0f2f7
 		font-size: 15px
-		font-family: Montserrat
 		font-weight: 500
 		top: 100%
 		z-index: 99
 		left: -10000px
 		visibility: hidden
 		opacity: 0
+		border-radius: 0px 0px 10px 10px
 		transition: opacity 0.3s, margin-top 0.4s
 	&-menu
 		list-style: none
 		width: 196px
+		border-radius: 0px 0px 10px 10px
+		box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4)
 		&__item
-			padding: 20px 40px
+			display: flex
+			height: 61px
+			justify-content: center
+			align-items: center
 			&:hover
 				background-color: #53c6ec
 		&__link
-			font-size: 12px
-			line-height: 16px
-			color: #aaa
+			width: 130px
+			color: #343e5c
+			font-size: 15px
+			font-weight: 500
 
 .dropdown-menu__item:last-child
-	margin-bottom: 0
+	border-radius: 0px 0px 10px 10px
 
 .dropdown-menu__item:hover .dropdown-menu__link
 	color: #fff
@@ -249,8 +245,7 @@ body
 .content
 
 .title
-	color: #343e5c
-	font-family: $font-family
+	color: #343e5c	
 	font-size: 20px
 	font-weight: 700
 	line-height: 20px
@@ -259,13 +254,144 @@ body
 .breadcrumbs
 	display: flex
 	padding: 30px 0
-	color: #b8bfd3
-	font-family: $font-family
+	color: #b8bfd3	
 	font-size: 13px
 	font-weight: 400
 
+/*_______________Catalog_______________*/
 
-/*____________________Service____________________*/
+.catalog
+	&-menu
+		height: 56px
+		background-color: #fff
+		border-radius: 5px
+		margin: 45px 0 25px
+	&-item
+		display: flex
+		justify-content: space-between
+	&-sidebar
+		width: 275px
+		height: 1320px
+		border-radius: 5px
+		background-color: #fff
+	&-products
+		width: 890px
+		&__row
+			display: flex
+			justify-content: space-between
+			margin-bottom: 30px
+			&:last-child
+				margin: 0
+
+.product
+	width: 275px
+	height: 420px
+	background-color: #fff
+	border-radius: 5px
+	position: relative
+	&-img
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 210px
+	&-title
+		width: 220px
+		color: #1c1e23
+		font-size: 15px
+		font-weight: 400
+		line-height: 20px
+		text-align: center
+		margin: 0 auto
+	&-item
+		display: block
+		width: 220px
+		height: 70px
+		&__favorites
+			color: #e3e8f0
+			font-size: 25px
+			position: absolute
+			left: 25px
+			top: 25px
+			&:focus
+				color: #ffcc30
+		&__price
+			color: #753aff
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			margin: 10px 0
+			position: absolute
+			left: 25px
+			bottom: 60px
+		&__button
+			color: #fff
+			font-size: 13px
+			font-weight: 500
+			text-transform: uppercase
+			background-color: #753aff
+			padding: 11px 24px
+			border: 1px solid #753aff
+			border-radius: 20px
+			position: absolute
+			right: 25px
+			bottom: 60px
+			&:hover
+				color: #fff
+				background-color: #53c6ec
+				border: 1px solid #753aff
+				text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.7)
+		&__instal
+			width: 80px
+			color: #b8bfd3
+			font-size: 14px
+			font-weight: 500
+			line-height: 20px
+			position: absolute
+			left: 25px
+			bottom: 15px
+		&__compare
+			color: #753aff
+			font-size: 13px
+			font-weight: 500
+			text-decoration: underline
+			text-transform: uppercase
+			padding: 15px 20px
+			position: absolute
+			right: 35px
+			bottom: 15px
+
+.paginator
+	height: 90px
+	background-color: #fff
+	border-radius: 5px
+	margin: 50px 0
+
+/*___________Catalog/Watched___________*/
+
+.watched
+	height: 480px
+	background-color: #fff
+	border-radius: 5px
+	margin-bottom: 60px
+	&-title
+		height: 56px
+		border: #343e5c
+		font-size: 12px
+		font-weight: bold
+		text-align: center
+		padding-top: 25px
+		border-bottom: 2px solid #f0f2f7
+		text-transform: uppercase
+
+.product-watched
+	width: 300px
+	height: 430px
+	background-color: none
+	border-radius: 5px
+	position: relative
+	outline: 1px solid #f0f2f7
+
+/*___________Watched/Service___________*/
 
 .service
 	margin-bottom: 80px
@@ -283,8 +409,7 @@ body
 		&__title
 			width: 160px
 			text-align: center
-			color: #1c1e23
-			font-family: $font-family
+			color: #1c1e23			
 			font-size: 18px
 			font-weight: 500
 			line-height: 20px
@@ -293,8 +418,7 @@ body
 			display: block
 			width: 165px
 			color: #fff
-			text-align: center
-			font-family: $font-family
+			text-align: center			
 			font-size: 13px
 			font-weight: 500
 			text-transform: uppercase
@@ -313,8 +437,7 @@ body
 			display: block
 			width: 165px
 			color: #753aff
-			text-align: center
-			font-family: $font-family
+			text-align: center			
 			font-size: 13px
 			font-weight: 500
 			text-transform: uppercase
@@ -334,8 +457,7 @@ body
 	height: 316px
 	background-color: white
 
-/*____________________Service____________________*/
-/*____________________Stock______________________*/
+/*_______________Service/stock_______________*/
 
 .stock
 	&-row
@@ -351,7 +473,6 @@ body
 		position: relative
 	&-title
 		color: #343e5c
-		font-family: Montserrat
 		font-size: 18px
 		font-weight: 500
 		top: 220px
@@ -368,7 +489,6 @@ body
 .fs-slide
 	&__title
 		color: #fff
-		font-family: Montserrat
 		font-size: 42px
 		font-weight: 700
 		width: 320px
@@ -383,7 +503,6 @@ body
 		margin: 10px 65px 45px
 	&__link
 		color: #753aff
-		font-family: Montserrat
 		font-size: 12px
 		font-weight: 500
 		text-decoration: none
@@ -398,6 +517,13 @@ body
 			color: #fff
 			background-color: #753aff
 			border: 1px solid #fff
+
+
+
+.slick-slide
+	max-width: 300px
+	height: 430px
+
 
 /*==================CONTENT_SLIDER===============*/
 
@@ -420,8 +546,7 @@ body
 		display: flex
 		&__item
 		&__link
-			color: #fff
-			font-family: $font-family
+			color: #fff			
 			font-size: 12px
 			font-weight: 500
 			margin: 0 20px
@@ -432,16 +557,14 @@ body
 		width: 180px
 		text-align: end
 		&__phone
-			color: #fff
-			font-family: $font-family
+			color: #fff			
 			font-size: 14px
 			font-weight: 400
 			line-height: 18px
 			&:hover
 				color: #53c6ec
 		&__mail
-			color: #fff
-			font-family: $font-family
+			color: #fff			
 			font-size: 14px
 			font-weight: 400
 			line-height: 18px
@@ -459,8 +582,7 @@ body
 .privacy
 	display: flex
 	&-item
-		color: #555
-		font-family: $font-family
+		color: #555		
 		font-size: 11px
 		font-weight: 400
 		margin-left: 20px

@@ -1,7 +1,6 @@
 /* Slider */
 
 body {
-    background: #53c6ec;
 }
 
 .slick-slider
@@ -121,6 +120,25 @@ body {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-prev:before,
+    .slick-next:before {
+      color: #fff;
+      margin: -10px;
+    }
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+
+.slick-active {
+
+}
+
+.slick-current {
+    opacity: 1;
 }
 
 

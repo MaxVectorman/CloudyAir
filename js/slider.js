@@ -1,7 +1,7 @@
-﻿$('.slider').each(function() {              // Для каждого слайдера
+﻿$('.slider__header').each(function() {              // Для каждого слайдера
   var $this   = $(this);                    // Текущий слайдер
-  var $group  = $this.find('.slide-group'); // Получаем группу слайдов (контейнер)
-  var $slides = $this.find('.slide');       // Создаем объект jQuery для хранения всех слайдов
+  var $group  = $this.find('.slide-group__header'); // Получаем группу слайдов (контейнер)
+  var $slides = $this.find('.slide__header');       // Создаем объект jQuery для хранения всех слайдов
   var buttonArray  = [];                    // Создаем массив для хранения кнопок навигации
   var currentIndex = 0;                     // Сохраняем индекс текущего слайда
   var timeout;                              // Устанавливаем интервал между автоперелистыванием
@@ -50,7 +50,7 @@
 
   $.each($slides, function(index) {
     // Создаем элемент button для кнопки
-    var $button = $('<button type="button" class="slide-btn"></button>');
+    var $button = $('<button type="button" class="slide-btn__header"></button>');
     if (index === currentIndex) {    // Если индекс принадлежит текущему элементу
       $button.addClass('active');    // Добавляем класс active
     }
